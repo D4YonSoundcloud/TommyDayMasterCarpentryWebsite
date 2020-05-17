@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Tommy Day | Master Carpentry</title>
   </head>
   <body>
-    <div class="container" >
+    <div class="container">
       <nav class="navbar">
         <ul>
           <li><a href="#home">HOME</a></li>
@@ -17,12 +21,10 @@
         </ul>
       </nav>
       <section id="home">
-        <h1>Tommy Day Master Carpentry</h1>
+        <h1>Tommy Day</h1>
+        <h2>Master Carpenter</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          doloremque asperiores esse? Molestias, unde ullam aliquid fugiat porro
-          dolores voluptates voluptatum quibusdam sed. Beatae cum expedita natus
-          a sapiente quis?
+          Custom Carpentry from a carpenter with 40+ years of experience.
         </p>
       </section>
       <section id="about">
@@ -44,13 +46,24 @@
         </p>
       </section>
       <section id="contact">
-        <h1>Contact</h1>
+        <h1>Contact Me</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
           doloremque asperiores esse? Molestias, unde ullam aliquid fugiat porro
           dolores voluptates voluptatum quibusdam sed. Beatae cum expedita natus
           a sapiente quis?
         </p>
+        <form action="POST">
+          <input type="text" placeholder="Your email Address" />
+          <textarea
+            name="contact-text"
+            id="contact-textarea"
+            cols="50"
+            rows="10"
+            placeholder="email message here"
+          ></textarea>
+          <button type="submit">Send Email</button>
+        </form>
       </section>
     </div>
   </body>
