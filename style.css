@@ -69,7 +69,7 @@ section h1 {
   transition: 0.6s ease;
 }
 section h1:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   cursor: default;
 }
 section h2 {
@@ -78,6 +78,46 @@ section h2 {
   font-family: "Roboto", sans-serif;
   transition: 0.6s ease;
 }
+
+a#after {
+  transform: translateY(-30px);
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  transition: 0.6s ease;
+}
+a#after:hover {
+  transform: translateY(-30px) scale(1.1);
+}
+a#before {
+  transform: translateY(-30px);
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  transition: 0.6s ease;
+}
+a#before:hover {
+  transform: translateY(-30px) scale(1.1);
+}
+a#previous-work {
+  transform: translateY(-30px);
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.6s ease;
+}
+a#previous-work:hover {
+  transform: translateY(-30px) scale(1.05);
+}
+p#scroll-for-pictures {
+  transform: translateY(-45px);
+  font-size: 1.5rem;
+
+
+}
+
+h1#h1-kitchen-before:hover {
+  transform: scale(1);
+}
+
 section h2:hover {
   transform: scale(1.05) translateY(-30px);
   font-family: "Roboto", sans-serif;
@@ -93,15 +133,23 @@ section#home {
     no-repeat center center/cover;
 }
 section#about {
-  background: url("https://images.unsplash.com/photo-1534330753005-f4d2037a164d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80")
-    no-repeat center center/cover;
+  background: url(/about-me-background.png) no-repeat center center/cover;
 }
 section#past-work {
   background: url("https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")
     no-repeat center center/cover;
 }
 section#contact {
-  background: url("https://images.unsplash.com/photo-1422246654994-34520d5a0340?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
+  background: url(/workshop.png) no-repeat center center/cover;
+}
+section#kitchen-before {
+  background: url(/kitchen-before.png) no-repeat center center/cover;
+}
+section#kitchen-after {
+  background: url(/kitchen-after.png) no-repeat center center/cover;
+}
+section#previous-work {
+  background: url("https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
     no-repeat center center/cover;
 }
 
@@ -113,24 +161,21 @@ form {
   text-align: center;
 }
 
-input {
+.email-input {
   padding: 10px;
   margin: 10px;
   cursor: pointer;
   border-radius: 0.4rem;
-  border: 1px solid rgb(212, 111, 52);
+  transition: 1s ease;
+  border: 1px solid rgb(129, 64, 26);
   background: white;
-  transition: 0.6s ease;
-}
-
-input:hover {
-  width: 100%;
+  width: 95%;
 }
 
 textarea {
   cursor: pointer;
   border-radius: 0.4rem;
-  border: 1px solid rgb(212, 111, 52);
+  border: 1px solid rgb(156, 78, 32);
   background: white;
 }
 
@@ -139,6 +184,59 @@ button {
   margin: 10px;
   cursor: pointer;
   border-radius: 0.4rem;
-  border: 1px solid rgb(212, 111, 52);
+  border: 1px solid rgb(165, 82, 33);
   background: white;
+  transition: 0.4s ease;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.wood-divider {
+  position: relative;
+  width: 98vw;
+  transform: translateY(38vh);
+}
+.wood-divider2 {
+  position: relative;
+  width: 98vw;
+  transform: translateY(42.5vh);
+}
+.wood-divider3 {
+  position: relative;
+  width: 98vw;
+  transform: translateY(45vh);
+}
+
+h1#tommy-day {
+  font-size: 90px;
+  color: rgba(95, 49, 6, 0.7);
+  mix-blend-mode: color-burn;
+  transition: 0.6s ease;
+}
+h1#tommy-day:hover {
+  transform: scale(1.05);
+  font-size: 90px;
+  color: rgba(95, 49, 6, 0.7);
+  mix-blend-mode: color-burn;
+}
+
+h2#master-carpenter {
+  color: rgba(70, 38, 9, 0.7);
+  mix-blend-mode: color-burn;
+}
+p#kitchen-remodeling {
+  font-size: 40px;
+  transform: translateY(30px);
+}
+
+p#custom-carpentry {
+  color: rgba(88, 47, 8, 0.7);
+  mix-blend-mode: color-burn;
 }
