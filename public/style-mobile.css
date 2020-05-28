@@ -1,0 +1,419 @@
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333333;
+    color: aliceblue;
+    line-height: 1.6;
+    height: 100vh;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    /* css smooth scroll */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar ul li {
+    margin: 0 0.5rem;
+    padding: 1rem;
+  }
+
+  .navbar ul li a {
+    position: relative;
+    bottom: 2.5vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+    transition: 0.6s ease;
+    font-size: 11px;
+  }
+
+  .navbar ul li a:hover {
+    color: rgb(184, 118, 32);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 75vh;
+    scroll-snap-align: center;
+  }
+
+  section h1 {
+    position: relative;
+    font-size: 2rem;
+    right: 20vw;
+    top: 20vw;
+    transition: 0.6s ease;
+  }
+  section h1:hover {
+    transform: scale(1.01);
+    cursor: default;
+  }
+  section h2 {
+    transform: translateY(-30px);
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    transition: 0.6s ease;
+  }
+
+  a#after {
+    position: relative;
+    right: 25vw;
+    bottom: -30vw;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    transition: 0.6s ease;
+  }
+  a#after:hover {
+    position: relative;
+    right: 25vw;
+    bottom: -30vw;
+  }
+  a#before {
+    position: relative;
+    right: 25vw;
+    bottom: 45vw;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    transition: 0.6s ease;
+  }
+  a#before:hover {
+    position: relative;
+    right: 25vw;
+    bottom: 45vw;
+  }
+  a#previous-work {
+    transform: translateY(-30px);
+    font-size: 2rem;
+    position: relative;
+    right: 5vw;
+    bottom: 5vw;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.6s ease;
+  }
+  a#previous-work:hover {
+    transform: translateY(-30px) scale(1.05);
+  }
+  a#more-pantry {
+    position: relative;
+    top: 25vh;
+    right: 23vw;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.6s ease;
+  }
+  a#more-pantry:hover {
+    transform: scale(1.05);
+  }
+  a#pastwork-button {
+    position: relative;
+    top: 20vh;
+    right: 20vw;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.6s ease;
+  }
+  a#pastwork-button:hover {
+    transform: scale(1.05);
+  }
+  a#contact-button {
+    position: relative;
+    top: 20vh;
+    right: 23vw;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.6s ease;
+  }
+  a#contact-button:hover {
+    transform: scale(1.05);
+  }
+  a#home-button {
+    position: relative;
+    top: 25vh;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.6s ease;
+  }
+  a#home-button:hover {
+    transform: scale(1.05);
+  }
+  a#about-button {
+    position: relative;
+    top: 25vh;
+    right: 20vw;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.6s ease;
+    color: rgba(122, 61, 3, 0.7);
+    mix-blend-mode: color-burn;
+  }
+  a#about-button:hover {
+    transform: scale(1.05);
+    color: rgba(109, 55, 5, 0.7);
+    mix-blend-mode: color-burn;
+  }
+  a#or-button {
+    position: relative;
+    top: 20vh;
+    right: 20vw;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.6s ease;
+  }
+  a#or-button:hover {
+    transform: scale(1.05);
+  }
+  a#back-to-kitchen {
+    position: relative;
+    bottom: 20vh;
+    right: 21vw;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.6s ease;
+  }
+  a#back-to-kitchen:hover {
+    transform: scale(1.05);
+  }
+  p#scroll-for-pictures {
+    transform: translateY(-45px);
+    font-size: 1.5rem;
+  }
+
+  h1#h1-kitchen-before {
+    position: relative;
+    top: -23vw;
+    right: 25vw;
+  }
+  h1#h1-after {
+    position: relative;
+    font-size: 2.5rem;
+    top: 15vw;
+    right: 20vw;
+  }
+
+  h1#pantry-before {
+    transform: translateX(-300px) translateY(210px) scale(1);
+  }
+  h1#pantry-after {
+    transform: translateX(300px) translateY(110px) scale(1);
+  }
+
+  section h2:hover {
+    transform: scale(1.05) translateY(-30px);
+    font-family: "Roboto", sans-serif;
+    cursor: default;
+  }
+
+  span {
+    transform: translateY(100px);
+    font-weight: 500;
+    font-size: 2rem;
+    transition: 0.6s ease;
+  }
+
+  a#email {
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: 0.6s ease;
+    transform: translateY(130px);
+  }
+  a#email:hover {
+    transform: translateY(130px) scale(1.1);
+  }
+  a#phone-number {
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: 0.6s ease;
+    transform: translateY(125px);
+  }
+  a#phone-number:hover {
+    transform: translateY(125px) scale(1.1);
+  }
+  section p {
+    font-size: 1.5rem;
+  }
+
+  section#home {
+    background: url("https://images.unsplash.com/photo-1525034687081-c702010cb70d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
+      no-repeat center center/cover;
+  }
+  section#about {
+    background: url(about-me-background.png) no-repeat center center/cover;
+  }
+  section#past-work {
+    background: url("https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")
+      no-repeat center center/cover;
+  }
+  section#contact {
+    background: url(workshop.png) no-repeat center center/cover;
+  }
+  section#kitchen-before {
+    background: url(kitchen-before.png) no-repeat center center/cover;
+  }
+  section#kitchen-after {
+    background: url(kitchen-after.png) no-repeat center center/cover;
+  }
+  section#previous-work {
+    background: url("https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+      no-repeat center center/cover;
+  }
+  section#pantry {
+    background: url(pantry.png) no-repeat center center/cover;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .email-input {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    transition: 1s ease;
+    border: 1px solid rgb(129, 64, 26);
+    background: white;
+    width: 95%;
+  }
+
+  textarea {
+    cursor: pointer;
+    border-radius: 0.4rem;
+    border: 1px solid rgb(156, 78, 32);
+    background: white;
+  }
+
+  button {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    border: 1px solid rgb(165, 82, 33);
+    background: white;
+    transition: 0.4s ease;
+  }
+  button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  h1#tommy-day {
+    font-size: 2rem;
+    position: relative;
+    right: 15vw;
+    top: 0vw;
+    color: rgba(95, 49, 6, 0.7);
+    mix-blend-mode: color-burn;
+    transition: 0.6s ease;
+  }
+
+  h1#tommy-day:hover {
+    font-size: 2rem;
+    position: relative;
+    right: 15vw;
+    top: 0vw;
+    transform: scale(1.05);
+    color: rgba(95, 49, 6, 0.7);
+    mix-blend-mode: color-burn;
+  }
+
+  h2#master-carpenter {
+    position: relative;
+    font-size: 1.5rem;
+    right: 18vw;
+    top: 5vw;
+    color: rgba(70, 38, 9, 0.7);
+    mix-blend-mode: color-burn;
+  }
+  p#kitchen-remodeling {
+    font-size: 30px;
+    position: relative;
+    right: 2.5vw;
+    bottom: 12vh;
+    transform: translateY(160px);
+  }
+
+  p#custom-carpentry {
+    font-size: 20px;
+    position: relative;
+    margin-right: 10vw;
+    left: 10vw;
+    text-align: left;
+    top: 5vw;
+    color: rgba(88, 47, 8, 0.7);
+    mix-blend-mode: color-burn;
+  }
+
+  p#phone-number-text {
+    font-weight: 800;
+    transform: translateY(130px);
+  }
+  p#email-text {
+    font-weight: 800;
+    transform: translateY(130px);
+  }
+  p#about-me-text {
+    font-size: 19px;
+    position: relative;
+    margin-right: 10vw;
+    left: 10vw;
+    text-align: left;
+    top: 20vw;
+  }
+  p#contact-me-text {
+    font-size: 19px;
+    position: relative;
+    margin-right: 10vw;
+    left: 9vw;
+    text-align: left;
+    top: 20vw;
+  }
+}

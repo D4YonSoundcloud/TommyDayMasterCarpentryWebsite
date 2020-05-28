@@ -108,24 +108,86 @@ a#previous-work:hover {
   transform: translateY(-30px) scale(1.05);
 }
 a#more-pantry {
-  transform: translateY(300px);
+  position: relative;
+  top: 25vh;
   font-size: 1.5rem;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
   transition: 0.6s ease;
 }
 a#more-pantry:hover {
-  transform: translateY(300px) scale(1.05);
+  transform:  scale(1.05);
+}
+a#pastwork-button {
+  position: relative;
+  top: 25vh;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.6s ease;
+}
+a#pastwork-button:hover {
+  transform:  scale(1.05);
+}
+a#contact-button {
+  position: relative;
+  top: 25vh;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.6s ease;
+}
+a#contact-button:hover {
+  transform:  scale(1.05);
+}
+a#home-button {
+  position: relative;
+  top: 25vh;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.6s ease;
+}
+a#home-button:hover {
+  transform:  scale(1.05);
+}
+a#about-button {
+  position: relative;
+  top: 25vh;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.6s ease;
+  color: rgba(122, 61, 3, 0.7);
+  mix-blend-mode: color-burn;
+}
+a#about-button:hover {
+  transform: scale(1.05);
+  color: rgba(109, 55, 5, 0.7);
+  mix-blend-mode: color-burn;
+}
+a#or-button {
+  position: relative;
+  top: 30vh;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.6s ease;
+  
+}
+a#or-button:hover {
+  transform: scale(1.05);
 }
 a#back-to-kitchen {
-  transform: translateY(-230px);
+  position: relative;
+  bottom: 20vh;
   font-size: 1.5rem;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
   transition: 0.6s ease;
 }
 a#back-to-kitchen:hover {
-  transform: translateY(-230px) scale(1.05);
+  transform:  scale(1.05);
 }
 p#scroll-for-pictures {
   transform: translateY(-45px);
@@ -137,10 +199,10 @@ h1#h1-kitchen-before {
 }
 
 h1#pantry-before {
-  transform:  translateX(-300px) translateY(210px) scale(1);
+  transform: translateX(-300px) translateY(210px) scale(1);
 }
 h1#pantry-after {
-  transform: translateX(300px) translateY(110px)scale(1);
+  transform: translateX(300px) translateY(110px) scale(1);
 }
 
 section h2:hover {
@@ -149,36 +211,59 @@ section h2:hover {
   cursor: default;
 }
 
-section p {
-  font-size: 1.5rem;
+span {
+  transform: translateY(100px);
+  font-weight: 500;
+  font-size: 2rem;
+  transition: 0.6s ease;
 }
+
+a#email {
+  font-weight: 500;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  transform: translateY(130px);
+}
+a#email:hover {
+  transform: translateY(130px) scale(1.1);
+}
+a#phone-number {
+  font-weight: 500;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  transform: translateY(125px);
+}
+a#phone-number:hover {
+  transform: translateY(125px) scale(1.1);
+}
+
 
 section#home {
   background: url("https://images.unsplash.com/photo-1525034687081-c702010cb70d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
     no-repeat center center/cover;
 }
 section#about {
-  background: url(/about-me-background.png) no-repeat center center/cover;
+  background: url(about-me-background.png) no-repeat center center/cover;
 }
 section#past-work {
   background: url("https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")
     no-repeat center center/cover;
 }
 section#contact {
-  background: url(/workshop.png) no-repeat center center/cover;
+  background: url(workshop.png) no-repeat center center/cover;
 }
 section#kitchen-before {
-  background: url(/kitchen-before.png) no-repeat center center/cover;
+  background: url(kitchen-before.png) no-repeat center center/cover;
 }
 section#kitchen-after {
-  background: url(/kitchen-after.png) no-repeat center center/cover;
+  background: url(kitchen-after.png) no-repeat center center/cover;
 }
 section#previous-work {
   background: url("https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
     no-repeat center center/cover;
 }
 section#pantry {
-  background: url(/pantry.png) no-repeat center center/cover;
+  background: url(pantry.png) no-repeat center center/cover;
 }
 
 form {
@@ -267,4 +352,13 @@ p#kitchen-remodeling {
 p#custom-carpentry {
   color: rgba(88, 47, 8, 0.7);
   mix-blend-mode: color-burn;
+}
+
+p#phone-number-text {
+  font-weight: 800;
+  transform: translateY(130px);
+}
+p#email-text {
+  font-weight: 800;
+  transform: translateY(130px);
 }

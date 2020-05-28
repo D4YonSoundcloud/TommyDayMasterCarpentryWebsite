@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-mobile.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-    <title>Tommy Day | Master Carpentry</title>
+    <title>Grassy Point Cabinent Shop LLC</title>
   </head>
   <body>
     <div class="container">
       <nav class="navbar">
         <ul>
-          <li><a href="/index.html#home">HOME</a></li>
+          <li><a href="index.html#home">HOME</a></li>
           <li><a href="#kitchen-before">PAST WORK</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
@@ -24,6 +25,7 @@
         <p id="scroll-for-pictures">
           scroll down for pictures
         </p>
+        <a href="#kitchen-before" id="or-button">or click here</a>
       </section>
       <section id="kitchen-before">
         <p id="kitchen-remodeling">Kitchen Remodeling</p>
@@ -31,7 +33,7 @@
         <a href="#kitchen-after" id="after">after</a>
       </section>
       <section id="kitchen-after">
-        <h1>after</h1>
+        <h1 id="h1-after">after</h1>
         <a href="#kitchen-before" id="before">before</a>
         <a href="#pantry" id="more-pantry">pantry</a>
       </section>
@@ -40,14 +42,22 @@
         <h1>pantry</h1>
         <h1 id="pantry-before">before</h1>
         <h1 id="pantry-after">after</h1>
+        <a href="#contact" id="contact-button">contact</a>
       </section>
       <section id="contact">
-        <h1>Contact Me</h1>
-        <p>
-          From Cabinets to Custom work, I can do anything. Contact me and I'll
-          get in touch as soon as I can.
+        <h1>contact me</h1>
+        <p id="contact-me-text">
+          From Cabinets to Custom work, I can do anything. Click on either my
+          number or email to get in touch.
         </p>
-        <form action="POST">
+        <p id="phone-number-text">Phone number</p>
+        <a id="phone-number" href="tel:888-888-8888"> 888-888-8888</a>
+
+        <p id="email-text">My email</p>
+        <a id="email" href="mailto:thisismyemail@gmail.com">
+          thisismyemail@gmail.com</a
+        >
+        <!-- <form action="POST">
           <input
             type="text"
             placeholder="Your email Address"
@@ -61,7 +71,8 @@
             placeholder="email message here"
           ></textarea>
           <button type="submit">Send Email</button>
-        </form>
+        </form> -->
+        <a href="index.html" id="home-button">home</a>
       </section>
     </div>
   </body>
